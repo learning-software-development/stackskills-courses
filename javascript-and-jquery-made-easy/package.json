@@ -14,8 +14,12 @@
     "javascript",
     "jquery"
   ],
-  "author": "Quintin Henn <quintin.henn@gmail.com>",
+  "author": "Quintin Henn <quintin.henn@gmail.com> (http://skerwe.web.za)",
   "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/learning-software-development/stackskills-courses/tree/master/javascript-and-jquery-made-easy"
+  },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
   },
