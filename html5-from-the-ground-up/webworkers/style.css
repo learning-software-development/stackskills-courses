@@ -1,0 +1,7 @@
+input[type="text"] {
+  width: 300px;
+}
+body {
+  width: 500px;
+  margin: 150px auto;
+}

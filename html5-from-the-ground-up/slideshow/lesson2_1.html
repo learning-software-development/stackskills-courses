@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <title>HTML5 Elements</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <script type="text/javascript">
+    (function (H) { H.className = H.className.replace(/\bno-js\b/, 'js') })(document.documentElement)
+
+  </script>
+  <link href="stylesheets/screen.css" type="text/css" rel="stylesheet" media="Screen,projection" />
+</head>
+
+<body>
+
+  <div id="header">
+    <div class="container">
+      <h1>HTML5 Elements, part 2</h1>
+    </div>
+  </div>
+
+  <div id="content">
+    <div id="slides">
+      <div class="slide">
+
+        <h2>Course Goal</h2>
+        <p>Continue exploration of HTML5 tags</p>
+        <h2>Course Outline</h2>
+
+        <ul>
+          <li>Text Tags</li>
+          <li>Media Tags</li>
+          <li>Tables</li>
+          <li>Documentation</li>
+        </ul>
+
+        <h2>Pre-requisites</h2>
+        <p>Understand the world wide web.</p>
+      </div>
+
+      <div class="slide">
+
+        <h2>Text Tags</h2>
+
+        <h3>&lt;a&gt;</h3>
+        <p>Anchor tags</p>
+        <p>Links to parts of pages or new pages</p>
+        <p>&lt;a href="http://google.com" title="Google"&gt;Google&lt;/a&gt;</p>
+        <p>target attribute</p>
+
+        <ul>
+          <li>_self: same frame (default)</li>
+          <li>_blank: new frame</li>
+          <li>_parent: new parent browsing content</li>
+          <li>_top: load to top level context</li>
+        </ul>
+      </div>
+
+      <div class="slide">
+
+        <h2>Text Tags</h2>
+
+        <h3>&lt;em&gt;</h3>
+        <p>Emphasis inside context</p>
+        <p>Style how you choose in CSS</p>
+        <p>I can't believe how <em>hard</em> that test was!</p>
+
+        <h3>&lt;strong&gt;</h3>
+        <p>Make something stand out</p>
+        <p>Doesn't change meaning of content (like &lt;em&gt;)</p>
+        <p>I use strong to show <strong>keywords</strong> that stand out.</p>
+      </div>
+
+      <div class="slide">
+
+        <h2>Text Tags</h2>
+
+        <h3>&lt;cite&gt;</h3>
+        <p>Reference <em>title</em> of outside work used.</p>
+        <p>books, songs, movies, speeches, etc.</p>
+        <p>not used to reference a person</p>
+        <p>I really enjoyed &lt;cite&gt;The Lord of the Rings&lt;/cite&gt; by J.R.R. Tolkien.</p>
+        <p>I really enjoyed <cite>The Lord of the Rings</cite> by J.R.R. Tolkien.</p>
+        <h3>&lt;q&gt;</h3>
+        <p>Quote from another source</p>
+        <p>Can use cite <em>attribute</em> to reference source by URL</p>
+        <p>Quotation marks optional</p>
+        <p>&lt;q cite="http://www.twitter.com/#!/therealnimoy"&gt;"Now that is logical. LLAP"&lt;/q&gt; said Leonard Nimoy in the spirit of &lt;cite&gt;Star Trek&lt;/cite&gt;.</p>
+        <p><q cite="http://www.twitter.com/#!/therealnimoy">"Now that is logical. LLAP"</q>said Leonard Nimoy in the spirit of <cite>Star Trek</cite>.</p>
+      </div>
+
+      <div class="slide">
+
+        <h2>Text Tags</h2>
+
+        <h3>&lt;data&gt;</h3>
+        <p>Some content for reference with machine readable content</p>
+        <p>value attribute for machine content</p>
+        <p>&lt;data value="11"&gt;Eleven&lt;/data&gt;</p>
+        <p><data value="11">Eleven</data></p>
+
+        <h3>&lt;time&gt;</h3>
+        <p>Specific data type for time and dates</p>
+        <p>Many rules for time formatting (see docs)</p>
+        <p>&lt;time datetime="2011-01-12"&gt;January 12th, 2011&lt;/time&gt;</p>
+        <p><time datetime="2011-01-12">January 12th, 2011</time></p>
+      </div>
+
+      <div class="slide">
+
+        <h2>Text Tags</h2>
+
+        <h3>&lt;code&gt;</h3>
+        <p>Fragment of computer code</p>
+        <p>class="language-php" to specify language</p>
+        <p>&lt;code class="language-php"&gt;echo("Hi there!") &lt;/code&gt;</p>
+        <p><code class="language-php">echo("Hi there!")</code></p>
+
+        <h3>&lt;var&gt;</h3>
+        <p>Variable used in calulation or mathematical expression.</p>
+        <p>4 = &lt;var&gt;x&lt;/var&gt; + 1</p>
+        <p>4 = <var>x</var> + 1</p>
+      </div>
+
+      <div class="slide">
+        <h2>Text Tags</h2>
+        <h3>&lt;span&gt;</h3>
+        <p>Tag a specific area of text for some purpose</p>
+        <p>Used commonly with styling</p>
+
+        <h3>&lt;br&gt;</h3>
+        <p>Line breaks as a part of content</p>
+        <p>Poems, music lyrics, mailing addresses</p>
+        <h3>&lt;sup&gt;&lt;sub&gt;</h3>
+        <p>Subscript and superscript</p>
+        <p>This shows <sup>superscript</sup></p>
+        <p>This shows <sub>subscript</sub></p>
+      </div>
+
+      <div class="slide">
+        <h2>Media Tags</h2>
+        <h3>&lt;img&gt;</h3>
+        <p>images and the link to file</p>
+        <p>alt shows if image doesn't work</p>
+        <p>Use jpeg, gif, png, and bmp for now</p>
+        <p>&lt;img src="images/heythere.png" alt="Giraffe!" /&gt;</p>
+        <img src="images/heythere.png" alt="Giraffe!" id="giraffe" />
+      </div>
+
+      <div class="slide">
+        <h2>Media Tags</h2>
+        <h3>&lt;embed&gt;</h3>
+        <p>tags to wrap around plug-in</p>
+        <p>Can set height, width, type, and src</p>
+        <h3>&lt;iframe&gt;</h3>
+        <p>nested browsing content</p>
+        <p>One HTML page inside another</p>
+        <p>Parent/child relationship (remeber _parent?)</p>
+      </div>
+
+      <div class="slide">
+        <h2>Media Tags</h2>
+        <h3>&lt;video&gt;</h3>
+        <p>HTML5 embed for video</p>
+        <p>specify autoplay, buffer, size, controls, loop</p>
+        <p>Text inside videos only shows if video doesn't play</p>
+        <h3>&lt;audio&gt;</h3>
+        <p>HTML5 embed for audio</p>
+        <p>specify autoplay, buffer, controls, loop</p>
+        <h3>Future lesson on implementing video and audio!</h3>
+      </div>
+
+      <div class="slide">
+        <h2>Tables</h2>
+        <h3>&lt;table&gt;</h3>
+        <p>Data representation in columns and rows</p>
+        <h3>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</h3>
+        <p>Specify portions of table</p>
+        <h3>&lt;tr&gt;</h3>
+        <p>Table row</p>
+        <h3>&lt;td&gt;</h3>
+        <p>Table data</p>
+        <h3>&lt;th&gt;</h3>
+        <p>Table header cell</p>
+      </div>
+
+      <div class="slide">
+        <h2>Tables</h2>
+        <div class="twocol">
+          <pre>
+          &lt;table&gt;
+
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;th&gt;Score 1&lt;/th&gt;
+                &lt;th&gt;Score 2&lt;/th&gt;
+                &lt;th&gt;Score 3&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Annie&lt;/td&gt;
+                &lt;td&gt;47&lt;/td&gt;
+                &lt;td&gt;56&lt;/td&gt;
+                &lt;td&gt;81&lt;/td&gt;
+              &lt;/tr&gt;
+
+              &lt;tr&gt;
+                &lt;td&gt;Troy&lt;/td&gt;
+                &lt;td&gt;85&lt;/td&gt;
+                &lt;td&gt;91&lt;/td&gt;
+                &lt;td&gt;96&lt;/td&gt;
+              &lt;/tr&gt;
+
+              &lt;tr&gt;
+                &lt;td&gt;Ahbed&lt;/td&gt;
+                &lt;td&gt;70&lt;/td&gt;
+                &lt;td&gt;90&lt;/td&gt;
+                &lt;td&gt;100&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+          </pre>
+        </div>
+
+        <div class="twocol">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Score 1</th>
+                <th>Score 2</th>
+                <th>Score 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Annie</td>
+                <td>47</td>
+                <td>56</td>
+                <td>81</td>
+              </tr>
+              <tr>
+                <td>Troy</td>
+                <td>85</td>
+                <td>91</td>
+                <td>96</td>
+              </tr>
+              <tr>
+                <td>Ahbed</td>
+                <td>70</td>
+                <td>90</td>
+                <td>100</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="styledtable">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Score 1</th>
+                <th>Score 2</th>
+                <th>Score 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Annie</td>
+                <td>47</td>
+                <td>56</td>
+                <td>81</td>
+              </tr>
+              <tr>
+                <td>Troy</td>
+                <td>85</td>
+                <td>91</td>
+                <td>96</td>
+              </tr>
+              <tr>
+                <td>Ahbed</td>
+                <td>70</td>
+                <td>90</td>
+                <td>100</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="slide">
+        <h2>References</h2>
+        <p>Dochub: dochub.io/#html/</p>
+        <p>WHATWG: whatwg.org</p>
+        <p>W3C: w3c.org/TR/html5/</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="container">
+      &copy; 2010 Trevor Davis Viget Labs
+    </div>
+  </div>
+
+  <script type="text/javascript" src="scripts/jquery.js"></script>
+  <script type="text/javascript" src="scripts/jquery.presentation.js"></script>
+  <script type="text/javascript" src="scripts/global.js"></script>
+
+</body>
+
+</html>

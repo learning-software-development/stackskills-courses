@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <title>Forms</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script> 
+    <link href="stylesheets/screen.css" type="text/css" rel="stylesheet" media="Screen,projection" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <h1>Forms</h1>
+      </div>
+    </div>
+    
+    <div id="content">
+      <div id="slides">
+
+        <div class="slide">
+          <h2>Course Goal</h2>
+          <p>Learn basics of HTML side of forms</p>
+
+          <h2>Course Outline</h2>
+          <ul>
+            <li>Forms Overview</li>
+            <li>Our focus</li>
+            <li>Get vs. Post</li>
+            <li>Input types</li>              
+            <li>Building our own form</li>                                 
+          </ul>
+          <h2>Pre-requisites</h2>
+          <p>Understand HTML5 and its syntax</p>
+        </div>
+
+        <div class="slide">
+          <h2>Forms Explained</h2>
+          <img src="images/formsexpl.png" alt="Forms" style="width: 1600px"/>
+        </div>
+
+        <div class="slide">
+          <h2>Get vs. Post</h2>
+          <p><pre>
+            &lt;form action="forms_submit.php" method="get"&gt;
+              Form data here.
+            &lt;/form&gt;
+          </pre></p>
+          <h3>GET</h3>
+          <p>Get puts form data in the url as a query string</p>
+          <p>http://www.mysite.com/contact?name=Jon&age=30</p>
+          <p>Bookmarked, shared, remembered in browser history</p>
+          <p>Searches and queries</p>
+          <h3>POST</h3>
+          <p>Sends data in the body of the request</p>
+          <p>Not visible, sharable, or remembered by browser</p>
+          <p>Logins, form submissions, contact forms</p>
+          <p>Bigger chucks of info</p>
+        </div>
+
+        <div class="slide">
+          <h2>Input types</h2>
+          <p>&lt;input type="text"&gt;</p>
+          <h3>text</h3>
+          <p>Single line of text info</p>
+          <h3>textarea</h3>
+          <p>Multiple lines of text</p>
+          <h3>email</h3>
+          <p>email input field; browser automatically validates</p>
+          <h3>password</h3>
+          <p>value is obscured with stars (does not encode the password)</p>
+          
+        </div>
+
+         <div class="slide">
+          <h2>Input types</h2>
+          <h3>checkbox</h3>
+          <p>Select one or more options</p>
+          <h3>radio</h3>
+          <p>Select only one choice in group</p>
+          <p>Same name attribute to group radio buttons</p>
+          <h3>submit</h3>
+          <p>Button to submit form; calls action in form tag</p>
+        </div>
+
+        
+      </div>
+    
+    <div id="footer">
+      <div class="container">
+        &copy; 2010 Trevor Davis Viget Labs
+      </div>
+    </div>
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery.presentation.js"></script>
+    <script type="text/javascript" src="scripts/global.js"></script>
+  </body>
+</html>

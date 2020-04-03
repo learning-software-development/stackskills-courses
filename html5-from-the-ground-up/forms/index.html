@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Forms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <form action="search.php" method="get" accept-charset="utf-8" id="search">
+    <input type="search" name="searchbox" value="" placeholder="Search our site">
+    <input type="submit" name="searchbtn" value="Search">
+  </form>
+
+  <form action="create.php" method="post" accept-charset="utf-8" id="create">
+
+    <fieldset id="basics">
+      <legend>Basic Info</legend>
+
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="John Doe" />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" value="" placeholder="" />
+
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" value="" placeholder="" />
+    </fieldset>
+
+    <fieldset id="options">
+      <legend>Optional Info</legend>
+
+      <label class="grplabel">Gender</label>
+      <label><input type="radio" name="gender" value="m" />Male</label>
+      <label><input type="radio" name="gender" value="f" />Female</label>
+
+      <label class="grplabel">Signups</label>
+      <div>
+        <label><input type="checkbox" name="signups" value="d" />Daily Updates</label>
+        <label><input type="checkbox" name="signups" value="w" />Weekly Updates</label>
+        <label><input type="checkbox" name="signups" value="m" />Monthly Updates</label>
+      </div>
+    </fieldset>
+
+    <input type="submit" value="Create my New Profile" />
+  </form>
+
+</body>
+
+</html>

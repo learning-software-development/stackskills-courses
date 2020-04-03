@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'JournalRegular';
+  src: url('fonts/journal-webfont.eot');
+  src: url('fonts/journal-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/journal-webfont.woff') format('woff'),
+    url('fonts/journal-webfont.ttf') format('truetype'),
+    url('fonts/journal-webfont.svg#JournalRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* h1 {
+  text-shadow: -2px -2px 5px black;
+	font-size: 80px;
+} */
+
+article {
+  /*column-width: 300px;
+	column-count: 3;*/
+  -webkit-columns: 3 300px;
+  -moz-columns: 3 300px;
+  columns: 3 300px;
+  -webkit-column-rule: 2px dotted #ccc;
+  -moz-column-rule: 2px dotted #ccc;
+  column-rule: 2px dotted #ccc;
+}
+
+body {
+  font-family: 'Dynalight', cursive;
+}

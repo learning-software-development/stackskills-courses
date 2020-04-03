@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <title>Video</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script> 
+    <link href="stylesheets/screen.css" type="text/css" rel="stylesheet" media="Screen,projection" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <h1>Video in HTML5</h1>
+      </div>
+    </div>
+    
+    <div id="content">
+      <div id="slides">
+
+        <div class="slide">
+          <h2>Course Goal</h2>
+          <p>Learn the basics of HTML5 video implementation</p>
+
+          <h2>Course Outline</h2>
+          <ul>
+            <li>Messy current state</li>
+            <li>Understand filetypes</li>
+            <li>Containers(audio/video)</li>
+            <li>Video element</li>
+            <li>Graceful fallbacks</li>                                
+          </ul>
+          <h2>Pre-requisites</h2>
+          <p>Understand HTML5 audio</p>
+        </div>
+
+        <div class="slide">
+          <h2>Messy current state (yes, video too)</h2>
+          <table class="compat-table"> <tbody> <tr> <th>Feature</th> <th>Chrome</th> <th>Firefox (Gecko)</th> <th>Internet Explorer</th> <th>Opera</th> <th>Safari</th> </tr> <tr> <td>Basic support</td> <td>3.0</td> <td>3.5 (1.9.1)
+</td> <td>9.0</td> <td>10.50</td> <td>3.1</td> </tr> <tr> <td><code>&lt;audio&gt;</code>: WAVE, PCM</td> <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td> <td>3.5 (1.9.1)
+</td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td>3.1</td> </tr> <tr> <td><code>&lt;audio&gt;</code>: WebM, Vorbis</td> <td><span style="color: #888" title="Please update this with the earliest version of support.">(Yes)</span></td> <td>4.0 (2.0)
+</td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td>10.60</td> <td>3.1 (must be installed separately)</td> </tr> <tr> <td><code>&lt;audio&gt;</code>: Ogg, Vorbis</td> <td><span style="color: #888" title="Please update this with the earliest version of support.">(Yes)</span></td> <td>3.5 (1.9.1)
+</td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td>10.50</td> <td>3.1 (must be installed separately, e.g. <a class="external" title="http://www.xiph.org/quicktime/" rel="external" href="http://www.xiph.org/quicktime/" target="_blank">XiphQT</a>)</td> </tr> <tr> <td><code>&lt;audio&gt;</code>: MPEG 4, MP3</td> <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td>9.0</td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td>3.1</td> </tr> <tr> <td><code>&lt;audio&gt;</code>: MPEG 4, AAC</td> <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td>9.0</td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td>3.1</td> </tr> <tr> <td><code>&lt;audio&gt;</code>: Ogg, Opus</td> <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td> <td> (15.0)
+</td> <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td> <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td> <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td> </tr> <tr> <td><code>&lt;video&gt;</code>: WebM, VP8, Vorbis</td> <td><span style="color: #888" title="Please update this with the earliest version of support.">(Yes)</span></td> <td>4.0 (2.0)
+</td> <td>9.0 (<a class="external" title="http://blogs.msdn.com/b/ie/archive/2011/03/16/html5-video-update-webm-for-ie9.aspx" rel="external" href="http://blogs.msdn.com/b/ie/archive/2011/03/16/html5-video-update-webm-for-ie9.aspx" target="_blank">must be installed separately</a>, e.g. <a class="external" title="http://tools.google.com/dlpage/webmmf/" rel="external" href="http://tools.google.com/dlpage/webmmf/" target="_blank">WebM MF</a>)</td> <td>10.60</td> <td>3.1 (must be installed separately, e.g. <a class="external" title="http://perian.org/" rel="external" href="http://perian.org/" target="_blank">Perian</a>)</td> </tr> <tr> <td><code>&lt;video&gt;</code>: Ogg, Theora, Vorbis</td> <td><span style="color: #888" title="Please update this with the earliest version of support.">(Yes)</span></td> <td>3.5 (1.9.1)
+</td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td>10.50</td> <td>3.1 (must be installed separately, e.g. <a class="external" title="http://www.xiph.org/quicktime/" rel="external" href="http://www.xiph.org/quicktime/" target="_blank">XiphQT</a>)</td> </tr> <tr> <td><code>&lt;video&gt;</code>: MPEG 4, H.264, MP3</td> <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td>9.0</td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td>3.1</td> </tr> <tr> <td><code>&lt;video&gt;</code>: MPEG 4, H.264, AAC</td> <td><span title="Compatibility unknown; please update this." style="color: rgb(255, 153, 0);">?</span></td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td>9.0</td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td>3.1</td> </tr> <tr> <td>any other format</td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td><span style="color: rgb(255, 0, 0);" title="Not supported.">--</span></td> <td>3.1 (plays all formats available via QuickTime)</td> </tr> </tbody> </table>
+        </div>
+        
+        <div class="slide">
+          <h2>Three major Video codecs</h2>
+          <h3>H.264</h3>
+          <p>IE9, Safari, Chrome, iOS</p>
+          <p>Profiles-many quality options for same file</p>
+          <h3>Theora</h3>
+          <p>FireFox, Chrome, Opera</p>
+          <p>Plugin for Safari</p>
+          <h3>VP8</h3>
+          <p>Firefox, Chrome, Opera</p>
+          <p>IE9 and Safari requires codec</p>
+        </div>
+
+         <div class="slide">
+          <h2>Containers</h2>
+          <p>Audio and video paired together</p>
+          <h3>OGG: Theora and Vorbis</h3>
+          <h3>MP4: H.264 AAC/MP3</h3>
+          <p>Works in flash too</p>
+          <h3>WebM: VP8 and Vorbis</h3>
+        </div>
+
+        <div class="slide">
+          <h2>Video Tag</h2>
+          <ul>
+            <li>autoplay</li>
+            <li>buffered (TimeRanges)</li>
+            <li>controls</li>
+            <li>height/width</li>
+            <li>controls</li>
+            <li>muted</li>
+            <li>preload</li>
+            <li>poster</li>            
+          </ul>
+        </div>
+
+        <div class="slide">
+          <h2>Let's fire up our browsers</h2>
+          <ul>
+            <li>Chrome</li>
+            <li>Firefox</li>
+            <li>Internet Explorer 9</li>
+            <li>Safari</li>
+            <li>Opera</li>
+          </ul>
+          
+        </div>
+
+        <div class="slide">
+          <h2>Helpful Links</h2>
+          <ul>
+            <li><a href="http://videojs.com/" title="Video JS">Video JS</a></li>
+            <li><a href="http://html5video.org/wiki/HTML5_Player_Comparison" title="Compare HTML5 players">Compare HTML5 players</a></li>
+            <li><a href="http://www.pond5.com/" title="Pond5">Pond5</a></li>
+            <li><a href="http://www.istockphoto.com/video" title="iStockphoto Video">iStockphoto Video</a></li>
+            <li><a href="http://www.youtube.com" title="YouTube">YouTube</a></li>
+            <li><a href="http://www.online-convert.com" title="online-convert">Online Convert</a></li>            
+          </ul>
+        </div>
+
+
+        
+      </div>
+    
+    <div id="footer">
+      <div class="container">
+        &copy; 2010 Trevor Davis Viget Labs
+      </div>
+    </div>
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery.presentation.js"></script>
+    <script type="text/javascript" src="scripts/global.js"></script>
+  </body>
+</html>

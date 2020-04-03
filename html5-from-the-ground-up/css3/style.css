@@ -1,0 +1,61 @@
+.box {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+}
+
+#bigbox {
+  top: 20px;
+  left: 50px;
+  background-color: rgba(224, 58, 58);
+  opacity: 0.7;
+}
+
+#secondbox {
+  top: 100px;
+  left: 150px;
+  background-color: hsla(233, 71%, 47%, 0.5);
+  opacity: 0.5;
+}
+
+/*.ie div.seethru {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+.ie div.seethru {
+	filter: alpha(opacity=50);
+}
+
+div.seethru {
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}*/
+div#linkarea a {
+  margin: 15px;
+  display: block;
+}
+
+body > div {
+  background-color: blue;
+}
+
+a[href*="google.com"] {
+  color: green;
+}
+
+a[href^="http://"] {
+  color: red;
+}
+
+img[src$="jpg"] {
+  width: 400px;
+}
+
+a:nth-child(2n + 1) {
+  color: black;
+}
+
+a:nth-last-child(1) {
+  color: orange;
+}

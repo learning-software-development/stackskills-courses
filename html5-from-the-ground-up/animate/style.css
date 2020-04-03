@@ -1,0 +1,50 @@
+ul {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+li {
+  -webkit-transition: all .3s;
+}
+
+li:hover {
+  margin-left: 15px;
+  color: green;
+}
+
+#stage {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #65A5D1;
+  position: relative;
+  /*Anchor point for absolutely positioned items */
+  overflow: hidden;
+}
+
+img[alt="Sun"] {
+  width: 25%;
+  position: absolute;
+  /*Anchored to #state */
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+}
+
+img[alt="Cloud"] {
+  width: 70%;
+  position: absolute;
+  top: 10px;
+  left: -100%;
+}
+
+img[alt="Sun"]:hover {
+  -webkit-transform: scale(1.2) rotate(45deg);
+  -moz-transform: scale(1.2) rotate(45deg);
+  -o-transform: scale(1.2) rotate(45deg);
+  -ms-transform: scale(1.2) rotate(45deg);
+  transform: scale(1.2) rotate(45deg);
+  top: 30px;
+  left: 30px;
+}
