@@ -1,0 +1,25 @@
+{
+  "name": "javascript-and-jquery-made-easy",
+  "version": "0.1.0",
+  "description": "Dive into This Powerful Library to Quickly & Easily Write JavaScript Code",
+  "main": "index.html",
+  "private": true,
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [
+    "tutorial",
+    "stackskills",
+    "javascript",
+    "jquery"
+  ],
+  "author": "Quintin Henn <quintin.henn@gmail.com>",
+  "license": "Unlicense",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
