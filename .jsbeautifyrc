@@ -1,0 +1,58 @@
+{
+  "beautify.language": {
+    "js": {
+      "type": ["javascript", "json"],
+      "filename": [".jshintrc", ".jsbeautifyrc"]
+    },
+    "css": ["css", "scss"],
+    "html": ["html"]
+  },
+  "indent_size": 2,
+  "indent_char": " ",
+  "end_with_newline": true,
+  "preserve_newlines": true,
+  "max_preserve_newlines": 1,
+
+  "indent_inner_html": false,
+  "indent_head_inner_html": true,
+  "indent_body_inner_html": true,
+  "indent_scripts": "normal",
+  "indent_handlebars": true,
+  "void_elements": [
+    "area",
+    "base",
+    "br",
+    "col",
+    "embed",
+    "hr",
+    "img",
+    "input",
+    "keygen",
+    "link",
+    "menuitem",
+    "meta",
+    "param",
+    "source",
+    "track",
+    "wbr",
+    "!doctype",
+    "?xml",
+    "?php",
+    "?=",
+    "basefont",
+    "isindex"
+  ],
+
+  "brace_style": "end-expand,preserve-inline",
+  "jslint_happy": true,
+  "break_chained_methods": false,
+  "space_in_empty_paren": false,
+  "space_in_paren": false,
+
+  "space_around_combinator": true,
+  "newline_between_rules": true,
+
+  "css": {
+    "preserve_newlines": false
+  }
+}
