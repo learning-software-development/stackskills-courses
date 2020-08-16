@@ -1,8 +1,12 @@
-# [Ruby Programming Basics][course]
+# :mortar_board: Ruby Programming Basics
+
+:link: StackSkills [online course][course]
 
 ## Interactive Ruby
 
-`irb [--simple-prompt]`  
-`quit`
+```shell
+irb [--simple-prompt]
+quit
+```
 
 [course]: https://stackskills.com/courses/enrolled/68596

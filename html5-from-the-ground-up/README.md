@@ -1,4 +1,6 @@
-# [HTML 5 from the Ground Up][course]
+# :mortar_board: HTML 5 from the Ground Up
+
+:link: StackSkills [online course][course]
 
 ## HTML 5
 
@@ -8,7 +10,7 @@
 ## HTTP Server
 
 - [http-server: a command-line http server](https://www.npmjs.com/package/http-server)  
-`http-server -p 8000`
+   `http-server -p 8000`
 
 ## Media
 
