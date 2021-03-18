@@ -7,10 +7,21 @@ These are all the [StackSkills][stackskills] online courses I completed to learn
 
 ## :beginner: Tutorials and Courses
 
+### Web Development Courses
+
 1. :heavy_check_mark: [HTML 5 from the Ground Up](html5-from-the-ground-up/)
-2. :heavy_check_mark: [Javascript and jQuery Made Easy for Beginners](javascript-and-jquery-made-easy/)
-3. :heavy_check_mark: [Ruby Programming Basics](ruby-programming-basics/)
-4. :heavy_check_mark: Core Java Programming for Beginners
+2. :heavy_check_mark: [Javascript and jQuery Made Easy for Beginners](javascript-and-jquery-made-easy/) x2
+
+### Software Programming Courses
+
+1. :heavy_check_mark: [Ruby Programming Basics](ruby-programming-basics/)
+2. :heavy_check_mark: Core Java Programming for Beginners
+3. :heavy_check_mark: Java Programming for Mobile Developers
+
+### Game Development Courses
+
+1 :heavy_check_mark: [Creating Kid's Games with Construct 2](https://github.com/learning-game-development/learning-construct-2-game-development/tree/master/toddler-games-tutorial) :rocket:
+2 :heavy_check_mark: [Create a Feeding Fish Frenzy Game in Construct 2](https://github.com/learning-game-development/learning-construct-2-game-development/tree/master/feeding-fish-frenzy-tutorial) :rocket:
 
 ## :beginner: Learn in 1 Hour Tutorials
 
