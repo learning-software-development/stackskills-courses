@@ -22,6 +22,7 @@ These are all the [StackSkills][stackskills] online courses I completed to learn
 
 1. :heavy_check_mark: [Creating Kid's Games with Construct 2](https://github.com/learning-game-development/learning-construct-2-game-development/tree/master/toddler-games-tutorial) :rocket:
 2. :heavy_check_mark: [Create a Feeding Fish Frenzy Game in Construct 2](https://github.com/learning-game-development/learning-construct-2-game-development/tree/master/feeding-fish-frenzy-tutorial) :rocket:
+3. :o: [Game Hacking | Create a Game in 1 Hour](https://github.com/learning-game-development/learning-unity-game-development/tree/master/Game-Hacking-Create-a-Game-in-an-Hour) :rocket:
 
 ## :beginner: Learn in 1 Hour Tutorials
 
